@@ -248,7 +248,7 @@ export function ExplorePage({ onNavigate }: ExplorePageProps) {
                 </div>
 
                 <img
-                  src="/images/explore-hero-ally-searching.png"
+                  src="/images/explore-hero-ally-searching.webp"
                   alt="Ally searching with magnifying glass"
                   style={{
                     width: '100%',
@@ -767,7 +767,7 @@ export function ExplorePage({ onNavigate }: ExplorePageProps) {
             {/* Image background with Ally peeking */}
             <div style={{ position: 'relative', width: '100%', minHeight: '380px' }}>
               <img
-                src="/images/explore-ally-in-cta.png"
+                src="/images/explore-ally-in-cta.webp"
                 alt="Ally peeking, ready to find your words"
                 style={{
                   width: '100%',

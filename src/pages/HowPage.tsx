@@ -160,7 +160,7 @@ export function HowPage({ onNavigate }: HowPageProps) {
             {/* Visual Foundation Canvas with Ally and Handwriting */}
             <div className="how-hero-art-canvas">
               <img
-                src="/images/about-ally-with-book.png"
+                src="/images/about-ally-with-book.webp"
                 alt="Ally refining everyday English"
                 className="how-hero-art-img"
               />

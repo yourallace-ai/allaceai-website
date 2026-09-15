@@ -26,7 +26,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <div className="home-hero-canvas">
             {/* The Hero Image acting as the visual foundation */}
             <img
-              src="/images/home-hero-ally-with-app.png"
+              src="/images/home-hero-ally-with-app.webp"
               alt="Ally standing beside the Allace AI app"
               className="home-hero-canvas-img"
             />
@@ -130,7 +130,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <div className="home-cta-banner-wrapper">
             {/* The Image is the Visual Foundation Canvas */}
             <img
-              src="/images/home-ally-in-cta.png"
+              src="/images/home-ally-in-cta.webp"
               alt="Ally on books, ready to grow with words"
               className="home-cta-bg-img"
             />

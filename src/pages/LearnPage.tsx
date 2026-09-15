@@ -165,7 +165,7 @@ export function LearnPage({ onNavigate }: LearnPageProps) {
                 </div>
 
                 <img
-                  src="/images/learn-hero-ally-onbooks-withbook.png"
+                  src="/images/learn-hero-ally-onbooks-withbook.webp"
                   alt="Ally sitting on books reading"
                   style={{
                     width: '100%',
@@ -614,7 +614,7 @@ export function LearnPage({ onNavigate }: LearnPageProps) {
             {/* Image background with App Mockup on the right */}
             <div style={{ position: 'relative', width: '100%', minHeight: '360px' }}>
               <img
-                src="/images/about-app-banner-cta.png"
+                src="/images/about-app-banner-cta.webp"
                 alt="Allace AI App Banner"
                 style={{
                   width: '100%',

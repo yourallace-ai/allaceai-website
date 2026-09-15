@@ -70,7 +70,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
           <div className="contact-hero-canvas">
             {/* Visual Foundation Canvas Image */}
             <img
-              src="/images/contact-ally.png"
+              src="/images/contact-ally.webp"
               alt="Ally listening at desk with coffee"
               className="contact-hero-canvas-img"
             />

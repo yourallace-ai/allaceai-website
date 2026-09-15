@@ -70,7 +70,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
           <div className="about-hero-canvas">
             {/* Primary Hero Image: Ally with Mobile */}
             <img
-              src="/images/about-hero-ally-with-mobile.png"
+              src="/images/about-hero-ally-with-mobile.webp"
               alt="Ally exploring English on mobile"
               className="about-hero-canvas-img"
             />
@@ -157,7 +157,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             {/* Right Column: Direction Signpost Image */}
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <img
-                src="/images/about-directions-bar-visual.png"
+                src="/images/about-directions-bar-visual.webp"
                 alt="Direction signpost, We have all been there"
                 style={{
                   maxWidth: '100%',
@@ -303,7 +303,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
                 </div>
 
                 <img
-                  src="/images/about-ally-with-heart.png"
+                  src="/images/about-ally-with-heart.webp"
                   alt="Ally holding glowing heart"
                   style={{
                     width: '100%',
@@ -458,7 +458,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             {/* Left: Ally Waving */}
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <img
-                src="/images/about-ally-hi.png"
+                src="/images/about-ally-hi.webp"
                 alt="Ally waving hello"
                 style={{
                   width: '100%',
