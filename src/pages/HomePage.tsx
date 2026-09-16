@@ -438,22 +438,31 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
         @media (max-width: 640px) {
           .home-hero-canvas {
-            min-height: 640px;
+            min-height: auto;
             border-radius: 20px;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            align-items: flex-start;
+            align-items: stretch;
+            background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 55%, #F4F8FA 100%);
           }
           .home-hero-canvas-img {
-            object-position: 74% 92%;
+            position: relative;
+            top: auto;
+            left: auto;
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            object-position: 80% center;
+            margin-top: -10px;
           }
           .home-hero-content-layer {
+            position: relative;
             max-width: 100%;
-            padding: 32px 20px 20px 20px;
+            padding: 28px 20px 16px 20px;
           }
           .home-hero-title {
-            font-size: 30px;
+            font-size: clamp(28px, 7.5vw, 36px);
             margin-bottom: 10px;
           }
           .home-hero-subtitle {
@@ -465,22 +474,23 @@ export function HomePage({ onNavigate }: HomePageProps) {
             margin-bottom: 20px;
           }
           .home-cta-banner-wrapper {
-            min-height: 520px;
+            min-height: auto;
             border-radius: 20px;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            align-items: flex-start;
+            align-items: stretch;
             position: relative;
+            background: linear-gradient(180deg, #FAF9F5 0%, #F0F7F9 100%);
           }
           .home-cta-bg-img {
-            position: absolute;
-            top: 0;
-            left: 0;
+            position: relative;
+            top: auto;
+            left: auto;
             width: 100%;
-            height: 100%;
+            height: 200px;
             object-fit: cover;
-            object-position: 18% 95%;
+            object-position: 25% center;
           }
           .home-cta-content-layer {
             position: relative;
@@ -489,11 +499,11 @@ export function HomePage({ onNavigate }: HomePageProps) {
             top: auto;
             bottom: auto;
             width: 100%;
-            padding: 30px 20px 16px 20px;
+            padding: 28px 20px 16px 20px;
             z-index: 2;
           }
           .home-cta-title {
-            font-size: 26px;
+            font-size: clamp(24px, 6.5vw, 32px);
             margin-bottom: 6px;
           }
           .home-cta-subtitle {
@@ -505,17 +515,19 @@ export function HomePage({ onNavigate }: HomePageProps) {
             margin-bottom: 16px;
           }
           .home-cta-handwriting {
-            position: absolute;
+            position: relative;
             top: auto;
-            bottom: 18%;
-            left: 50%;
+            bottom: auto;
+            left: auto;
             right: auto;
-            font-size: 17px;
+            margin: 0 0 12px 20px;
+            font-size: 16px;
             line-height: 1.15;
-            transform: rotate(-6deg);
-            display: block;
+            transform: rotate(-4deg);
+            display: inline-block;
             z-index: 3;
             text-align: left;
+            white-space: normal;
           }
         }
       `}</style>

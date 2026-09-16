@@ -52,8 +52,8 @@ export function Header({ activeNav, onNavigate }: HeaderProps) {
             justifyContent: 'space-between',
             maxWidth: '1240px',
             margin: '0 auto',
-            padding: '16px 28px',
           }}
+          className="header-inner-container"
         >
           {/* EXACT OFFICIAL ALLACE.AI LOGO ASSET FROM CURRENT PROJECT */}
           <button
@@ -61,10 +61,11 @@ export function Header({ activeNav, onNavigate }: HeaderProps) {
             style={{
               display: 'flex',
               alignItems: 'center',
-              gap: '12px',
+              gap: '10px',
               cursor: 'pointer',
               textAlign: 'left',
-              padding: '2px 0',
+              padding: '4px 0',
+              minHeight: '44px',
             }}
             aria-label="Allace AI Home"
           >
@@ -72,7 +73,7 @@ export function Header({ activeNav, onNavigate }: HeaderProps) {
               src="/images/allaceai-symbol-dark.webp"
               alt="Allace AI Symbol"
               style={{
-                height: '32px',
+                height: '30px',
                 width: 'auto',
                 objectFit: 'contain',
                 display: 'block',
@@ -82,7 +83,7 @@ export function Header({ activeNav, onNavigate }: HeaderProps) {
               src="/images/allaceai-name-dark.webp"
               alt="Allace AI"
               style={{
-                height: '15px',
+                height: '14px',
                 width: 'auto',
                 objectFit: 'contain',
                 display: 'block',
@@ -175,11 +176,13 @@ export function Header({ activeNav, onNavigate }: HeaderProps) {
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               style={{
-                padding: '6px',
+                width: '44px',
+                height: '44px',
                 color: '#0B1B2B',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
+                borderRadius: '8px',
               }}
               className="mobile-toggle-btn"
               aria-label={mobileMenuOpen ? 'Close Navigation Menu' : 'Open Navigation Menu'}
@@ -196,10 +199,10 @@ export function Header({ activeNav, onNavigate }: HeaderProps) {
             style={{
               backgroundColor: '#FAF9F5',
               borderTop: '1px solid #E5ECEB',
-              padding: '20px 24px 28px 24px',
+              padding: '16px 20px 24px 20px',
               display: 'flex',
               flexDirection: 'column',
-              gap: '12px',
+              gap: '8px',
               boxShadow: '0 12px 30px rgba(11, 27, 43, 0.08)',
             }}
             className="animate-fade-in"
@@ -214,7 +217,8 @@ export function Header({ activeNav, onNavigate }: HeaderProps) {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'space-between',
-                    padding: '12px 14px',
+                    padding: '12px 16px',
+                    minHeight: '46px',
                     borderRadius: '10px',
                     backgroundColor: isActive ? '#EBF4F7' : 'transparent',
                     color: isActive ? '#008299' : '#0B1B2B',
@@ -238,12 +242,12 @@ export function Header({ activeNav, onNavigate }: HeaderProps) {
               );
             })}
 
-            <div style={{ height: '1px', backgroundColor: '#E5ECEB', margin: '6px 0' }} />
+            <div style={{ height: '1px', backgroundColor: '#E5ECEB', margin: '4px 0' }} />
 
             <div
               style={{
-                padding: '10px 14px',
-                fontSize: '12.5px',
+                padding: '12px 14px',
+                fontSize: '12px',
                 fontWeight: '700',
                 color: '#008299',
                 backgroundColor: '#EAF4F7',
@@ -259,6 +263,19 @@ export function Header({ activeNav, onNavigate }: HeaderProps) {
         )}
 
         <style>{`
+          .header-inner-container {
+            padding: 14px 28px;
+          }
+          @media (max-width: 768px) {
+            .header-inner-container {
+              padding: 12px 18px;
+            }
+          }
+          @media (max-width: 360px) {
+            .header-inner-container {
+              padding: 10px 14px;
+            }
+          }
           @media (min-width: 860px) {
             .desktop-nav-menu {
               display: flex !important;

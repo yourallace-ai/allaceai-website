@@ -288,10 +288,10 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
                   className="ally-handwriting equation-handwriting"
                   style={{
                     position: 'absolute',
-                    top: '28%',
-                    left: '-16%',
-                    transform: 'rotate(-10deg)',
-                    fontSize: 'clamp(24px, 2.6vw, 34px)',
+                    top: '24%',
+                    left: '0',
+                    transform: 'rotate(-8deg)',
+                    fontSize: 'clamp(20px, 2.2vw, 30px)',
                     color: '#0A4E58',
                     zIndex: 2,
                     pointerEvents: 'none',
@@ -697,6 +697,12 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
           }
           .about-bottom-cta {
             padding: 32px 24px !important;
+          }
+        }
+
+        @media (max-width: 540px) {
+          .approach-grid {
+            grid-template-columns: 1fr !important;
           }
         }
       `}</style>

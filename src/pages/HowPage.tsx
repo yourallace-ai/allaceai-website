@@ -657,8 +657,8 @@ export function HowPage({ onNavigate }: HowPageProps) {
           top: 0;
           right: 0;
           bottom: 0;
-          width: 70%;
-          min-width: 660px;
+          width: 65%;
+          max-width: 100%;
           pointer-events: none;
           overflow: hidden;
           display: flex;

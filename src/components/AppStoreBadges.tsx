@@ -29,8 +29,8 @@ export function AppStoreBadges({ onBadgeClick, className = '', size = 'default' 
       {/* Google Play - Coming Soon */}
       <button
         onClick={handleClick}
-        className="app-badge-btn"
-        style={{ padding: pad, width: btnWidth, minWidth: btnWidth, boxSizing: 'border-box' }}
+        className="app-badge-btn app-badge-item"
+        style={{ padding: pad, maxWidth: btnWidth, width: '100%', boxSizing: 'border-box' }}
         title="Google Play - Coming Soon"
         aria-label="Google Play - Coming Soon"
       >
@@ -68,8 +68,8 @@ export function AppStoreBadges({ onBadgeClick, className = '', size = 'default' 
       {/* Apple App Store - Coming Soon */}
       <button
         onClick={handleClick}
-        className="app-badge-btn"
-        style={{ padding: pad, width: btnWidth, minWidth: btnWidth, boxSizing: 'border-box' }}
+        className="app-badge-btn app-badge-item"
+        style={{ padding: pad, maxWidth: btnWidth, width: '100%', boxSizing: 'border-box' }}
         title="App Store - Coming Soon"
         aria-label="App Store - Coming Soon"
       >
@@ -88,6 +88,21 @@ export function AppStoreBadges({ onBadgeClick, className = '', size = 'default' 
           <div className="app-badge-text-tag">Coming Soon</div>
         </div>
       </button>
+
+      <style>{`
+        .app-badge-item {
+          flex: 1 1 160px;
+        }
+        @media (max-width: 430px) {
+          .app-store-badges-wrap {
+            width: 100%;
+          }
+          .app-badge-item {
+            flex: 1 1 100%;
+            max-width: 100% !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }

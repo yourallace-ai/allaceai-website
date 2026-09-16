@@ -282,11 +282,14 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
           display: inline-flex;
           align-items: center;
           gap: 10px;
-          font-size: clamp(17px, 1.6vw, 20px);
+          font-size: clamp(14px, 4.5vw, 20px);
           font-weight: 800;
           color: #008299;
           text-decoration: none;
           transition: color 0.15s ease, transform 0.15s ease;
+          max-width: 100%;
+          overflow-wrap: break-word;
+          word-break: break-word;
         }
 
         .contact-hero-email-link:hover {
@@ -303,11 +306,12 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
           display: flex;
           align-items: center;
           gap: 12px;
+          flex-wrap: wrap;
         }
 
         .contact-hero-social-btn {
-          width: 42px;
-          height: 42px;
+          width: 44px;
+          height: 44px;
           border-radius: 50%;
           background-color: rgba(255, 255, 255, 0.85);
           border: 1px solid #E5ECEB;
