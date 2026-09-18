@@ -230,7 +230,7 @@ export function ExplorePage({ onNavigate }: ExplorePageProps) {
                 </div>
 
                 <div
-                  className="ally-handwriting"
+                  className="ally-handwriting explore-handwriting-bottom"
                   style={{
                     position: 'absolute',
                     bottom: '22%',
@@ -861,11 +861,20 @@ export function ExplorePage({ onNavigate }: ExplorePageProps) {
           .tone-arrow {
             transform: rotate(90deg);
           }
+          .explore-cta-banner-wrapper {
+            display: flex !important;
+            flex-direction: column !important;
+          }
           .explore-cta-text-overlay {
             position: relative !important;
             width: 100% !important;
-            padding: 32px 24px !important;
+            padding: 28px 20px !important;
             background-color: #FAF9F5;
+          }
+        }
+        @media (max-width: 768px) {
+          .explore-handwriting-bottom {
+            right: 4% !important;
           }
         }
         @media (max-width: 580px) {

@@ -353,11 +353,24 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
             display: flex;
             flex-direction: column;
             align-items: stretch;
+            background-color: #FFFFFF;
+          }
+          .contact-hero-canvas-img {
+            position: relative;
+            top: auto;
+            left: auto;
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: contain;
+            object-position: center;
+            background-color: #FAF9F5;
+            padding: 12px 12px 0 12px;
           }
           .contact-hero-content-layer {
             position: relative;
             max-width: 100%;
-            padding: 36px 24px 24px 24px;
+            padding: 24px 20px 32px 20px;
           }
           .contact-hero-title {
             font-size: clamp(24px, 5.5vw, 32px);
@@ -371,25 +384,16 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
             margin-bottom: 20px;
           }
           .contact-hero-email-link {
-            font-size: 17px;
-          }
-          .contact-hero-canvas-img {
-            position: relative;
-            top: auto;
-            left: auto;
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            object-position: 75% 65%;
-            display: block;
+            font-size: clamp(14px, 4.5vw, 17px);
+            word-break: break-all;
           }
         }
 
         @media (max-width: 960px) {
           .contact-cta-balanced {
             grid-template-columns: 1fr !important;
-            padding: 36px 28px !important;
-            gap: 28px !important;
+            padding: 28px 20px !important;
+            gap: 24px !important;
           }
           .contact-cta-middle {
             justify-content: flex-start !important;
@@ -397,6 +401,12 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
           }
           .contact-cta-action {
             justify-content: flex-start !important;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .contact-hero-content-layer {
+            padding: 20px 16px 28px 16px;
           }
         }
       `}</style>

@@ -653,11 +653,24 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             display: flex;
             flex-direction: column;
             align-items: stretch;
+            background-color: #FFFFFF;
+          }
+          .about-hero-canvas-img {
+            position: relative;
+            top: auto;
+            left: auto;
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: contain;
+            object-position: center;
+            background-color: #F8F7F3;
+            padding: 12px 12px 0 12px;
           }
           .about-hero-content-layer {
             position: relative;
             max-width: 100%;
-            padding: 36px 24px 24px 24px;
+            padding: 24px 20px 32px 20px;
           }
           .about-hero-title {
             font-size: clamp(26px, 6vw, 34px);
@@ -669,15 +682,6 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
           }
           .about-hero-desc {
             font-size: 14px;
-          }
-          .about-hero-canvas-img {
-            position: relative;
-            top: auto;
-            left: auto;
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            object-position: 65% center;
           }
         }
 
@@ -696,13 +700,16 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             margin-bottom: 16px !important;
           }
           .about-bottom-cta {
-            padding: 32px 24px !important;
+            padding: 28px 20px !important;
           }
         }
 
         @media (max-width: 540px) {
           .approach-grid {
             grid-template-columns: 1fr !important;
+          }
+          .about-hero-content-layer {
+            padding: 20px 16px 28px 16px;
           }
         }
       `}</style>

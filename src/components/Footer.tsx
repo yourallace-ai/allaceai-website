@@ -40,6 +40,7 @@ export function Footer({ onNavigate }: FooterProps) {
             paddingBottom: '36px',
             borderBottom: '1px solid #EBE6DC',
           }}
+          className="footer-main-row"
         >
           {/* EXACT OFFICIAL ALLACE.AI LOGO ASSET FROM CURRENT PROJECT */}
           <button
@@ -84,6 +85,7 @@ export function Footer({ onNavigate }: FooterProps) {
               gap: '32px',
               flexWrap: 'wrap',
             }}
+            className="footer-nav"
           >
             {navLinks.map((link) => (
               <button
@@ -183,6 +185,7 @@ export function Footer({ onNavigate }: FooterProps) {
             gap: '16px',
             paddingTop: '24px',
           }}
+          className="footer-bottom-row"
         >
           <div style={{ fontSize: '13px', color: '#7C9197' }}>
             © {currentYear} Allace.AI. All rights reserved.
@@ -197,6 +200,34 @@ export function Footer({ onNavigate }: FooterProps) {
           </div>
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 768px) {
+          footer {
+            padding: 36px 0 28px 0 !important;
+          }
+          .footer-main-row {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 24px !important;
+          }
+          .footer-nav {
+            gap: 20px !important;
+          }
+        }
+        @media (max-width: 480px) {
+          .footer-nav {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 12px !important;
+          }
+          .footer-bottom-row {
+            flex-direction: column-reverse !important;
+            align-items: flex-start !important;
+            gap: 12px !important;
+          }
+        }
+      `}</style>
     </footer>
   );
 }

@@ -93,13 +93,15 @@ export function AppStoreBadges({ onBadgeClick, className = '', size = 'default' 
         .app-badge-item {
           flex: 1 1 160px;
         }
-        @media (max-width: 430px) {
+        @media (max-width: 480px) {
           .app-store-badges-wrap {
             width: 100%;
+            justify-content: center;
           }
           .app-badge-item {
             flex: 1 1 100%;
             max-width: 100% !important;
+            justify-content: flex-start;
           }
         }
       `}</style>

@@ -781,17 +781,18 @@ export function HowPage({ onNavigate }: HowPageProps) {
             min-height: auto;
             border-radius: 24px;
             display: flex;
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: stretch;
             justify-content: flex-start;
+            background-color: #FFFFFF;
           }
           .how-hero-content-layer {
             position: relative;
             max-width: 100%;
-            padding: 32px 20px 14px 20px;
+            padding: 24px 20px 32px 20px;
           }
           .how-hero-title {
-            font-size: clamp(26px, 6vw, 34px);
+            font-size: clamp(26px, 6vw, 36px);
             margin-bottom: 12px;
           }
           .how-hero-subtitle {
@@ -803,13 +804,16 @@ export function HowPage({ onNavigate }: HowPageProps) {
             top: auto;
             bottom: auto;
             width: 100%;
-            height: 270px;
+            height: auto;
+            max-height: 300px;
             min-width: 100%;
             max-width: 100%;
             overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
+            background: linear-gradient(135deg, #EBF4F7 0%, #FAF9F5 100%);
+            padding: 16px 16px 0 16px;
             -webkit-mask-image: none;
             mask-image: none;
           }
@@ -818,30 +822,36 @@ export function HowPage({ onNavigate }: HowPageProps) {
             right: auto;
             top: auto;
             transform: none;
-            height: 100%;
-            max-height: 265px;
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            max-height: 270px;
             object-fit: contain;
             object-position: center bottom;
+            mix-blend-mode: multiply;
           }
           .how-hero-handwriting {
-            top: 10px;
+            top: 14px;
             right: 16px;
-            font-size: 13.5px !important;
+            font-size: clamp(14px, 4vw, 17px) !important;
             line-height: 1.15;
             z-index: 10;
-            transform-origin: right top;
+            transform: rotate(4deg);
+            white-space: nowrap;
           }
         }
 
         @media (max-width: 480px) {
           .how-hero-content-layer {
-            padding: 28px 16px 10px 16px;
+            padding: 20px 16px 28px 16px;
           }
           .how-hero-art-canvas {
-            height: 250px;
+            max-height: 260px;
+            padding: 12px 12px 0 12px;
           }
           .how-hero-handwriting {
-            display: none;
+            font-size: 13.5px !important;
+            right: 12px;
           }
         }
 

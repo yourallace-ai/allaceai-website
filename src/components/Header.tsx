@@ -72,12 +72,7 @@ export function Header({ activeNav, onNavigate }: HeaderProps) {
             <img
               src="/images/allaceai-symbol-dark.webp"
               alt="Allace AI Symbol"
-              style={{
-                height: '30px',
-                width: 'auto',
-                objectFit: 'contain',
-                display: 'block',
-              }}
+              className="header-brand-symbol"
             />
             <img
               src="/images/allaceai-name-dark.webp"
@@ -266,14 +261,43 @@ export function Header({ activeNav, onNavigate }: HeaderProps) {
           .header-inner-container {
             padding: 14px 28px;
           }
+          .header-brand-symbol {
+            height: 30px;
+            width: auto;
+            object-fit: contain;
+            display: block;
+          }
+          .header-brand-name {
+            height: 14px;
+            width: auto;
+            object-fit: contain;
+            display: block;
+          }
           @media (max-width: 768px) {
             .header-inner-container {
               padding: 12px 18px;
             }
           }
-          @media (max-width: 360px) {
+          @media (max-width: 375px) {
             .header-inner-container {
               padding: 10px 14px;
+            }
+            .header-brand-symbol {
+              height: 26px;
+            }
+            .header-brand-name {
+              height: 12px;
+            }
+          }
+          @media (max-width: 320px) {
+            .header-inner-container {
+              padding: 8px 12px;
+            }
+            .header-brand-symbol {
+              height: 24px;
+            }
+            .header-brand-name {
+              height: 11px;
             }
           }
           @media (min-width: 860px) {

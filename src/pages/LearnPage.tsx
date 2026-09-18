@@ -719,10 +719,14 @@ export function LearnPage({ onNavigate }: LearnPageProps) {
             flex-direction: column !important;
             gap: 24px !important;
           }
+          .learn-cta-banner-wrapper {
+            display: flex !important;
+            flex-direction: column !important;
+          }
           .learn-cta-text-overlay {
             position: relative !important;
             width: 100% !important;
-            padding: 32px 24px !important;
+            padding: 28px 20px !important;
             background-color: #FAF9F5;
           }
         }

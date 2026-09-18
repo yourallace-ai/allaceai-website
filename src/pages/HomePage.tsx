@@ -326,14 +326,14 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
         @media (max-width: 1024px) {
           .home-hero-canvas {
-            min-height: 520px;
+            min-height: 500px;
           }
           .home-hero-canvas-img {
             object-position: 84% center;
           }
           .home-hero-content-layer {
-            max-width: 49%;
-            padding: 44px 16px 44px 40px;
+            max-width: 50%;
+            padding: 44px 20px 44px 36px;
           }
           .home-hero-title {
             font-size: clamp(30px, 3.8vw, 42px);
@@ -372,125 +372,78 @@ export function HomePage({ onNavigate }: HomePageProps) {
           }
         }
 
-        @media (max-width: 900px) {
-          .pillars-grid {
-            grid-template-columns: 1fr !important;
-            gap: 20px !important;
-          }
-          .pillar-col {
-            border-right: none !important;
-            border-bottom: 1px solid #E8E4DA;
-            padding: 24px !important;
-          }
-        }
-
-        @media (max-width: 860px) {
-          .home-hero-canvas {
-            min-height: 480px;
-          }
-          .home-hero-canvas-img {
-            object-position: 88% center;
-          }
-          .home-hero-content-layer {
-            max-width: 53%;
-            padding: 36px 14px 36px 32px;
-          }
-          .home-hero-title {
-            font-size: 32px;
-            letter-spacing: -1px;
-            margin-bottom: 12px;
-          }
-          .home-hero-subtitle {
-            font-size: 16px;
-            margin-bottom: 8px;
-          }
-          .home-hero-desc {
-            font-size: 13.5px;
-            margin-bottom: 20px;
-          }
-          .home-cta-banner-wrapper {
-            min-height: 360px;
-          }
-          .home-cta-bg-img {
-            object-position: 12% center;
-          }
-          .home-cta-handwriting {
-            font-size: 16.5px;
-            top: 12%;
-            left: 33.5%;
-            display: block;
-          }
-          .home-cta-content-layer {
-            left: 47%;
-            right: 3%;
-          }
-          .home-cta-title {
-            font-size: 25px;
-          }
-          .home-cta-subtitle {
-            font-size: 14px;
-          }
-          .home-cta-desc {
-            font-size: 12px;
-            margin-bottom: 12px;
-          }
-        }
-
-        @media (max-width: 640px) {
+        @media (max-width: 768px) {
           .home-hero-canvas {
             min-height: auto;
-            border-radius: 20px;
+            border-radius: 24px;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
             align-items: stretch;
-            background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 55%, #F4F8FA 100%);
+            background-color: #FFFFFF;
           }
           .home-hero-canvas-img {
             position: relative;
             top: auto;
             left: auto;
             width: 100%;
-            height: 240px;
-            object-fit: cover;
-            object-position: 80% center;
-            margin-top: -10px;
+            height: auto;
+            max-height: 320px;
+            object-fit: contain;
+            object-position: center;
+            background-color: #FAF9F5;
+            padding: 12px 12px 0 12px;
           }
           .home-hero-content-layer {
             position: relative;
             max-width: 100%;
-            padding: 28px 20px 16px 20px;
+            padding: 24px 20px 32px 20px;
           }
           .home-hero-title {
-            font-size: clamp(28px, 7.5vw, 36px);
-            margin-bottom: 10px;
+            font-size: clamp(26px, 6.5vw, 36px);
+            margin-bottom: 12px;
+            letter-spacing: -0.8px;
           }
           .home-hero-subtitle {
-            font-size: 15.5px;
+            font-size: clamp(15px, 4vw, 18px);
             margin-bottom: 8px;
           }
           .home-hero-desc {
-            font-size: 13.5px;
+            font-size: clamp(13.5px, 3.5vw, 15px);
             margin-bottom: 20px;
           }
           .home-cta-banner-wrapper {
             min-height: auto;
-            border-radius: 20px;
+            border-radius: 24px;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
             align-items: stretch;
-            position: relative;
-            background: linear-gradient(180deg, #FAF9F5 0%, #F0F7F9 100%);
+            background-color: #FAF9F5;
           }
           .home-cta-bg-img {
             position: relative;
             top: auto;
             left: auto;
             width: 100%;
-            height: 200px;
-            object-fit: cover;
-            object-position: 25% center;
+            height: auto;
+            max-height: 280px;
+            object-fit: contain;
+            object-position: center;
+            background-color: #F5F3EC;
+            padding: 12px 12px 0 12px;
+          }
+          .home-cta-handwriting {
+            position: relative;
+            top: auto;
+            bottom: auto;
+            left: auto;
+            right: auto;
+            margin: 16px 20px 4px 20px;
+            font-size: clamp(16px, 4.5vw, 22px);
+            line-height: 1.15;
+            transform: rotate(-3deg);
+            display: inline-block;
+            text-align: left;
+            white-space: normal;
           }
           .home-cta-content-layer {
             position: relative;
@@ -499,35 +452,31 @@ export function HomePage({ onNavigate }: HomePageProps) {
             top: auto;
             bottom: auto;
             width: 100%;
-            padding: 28px 20px 16px 20px;
-            z-index: 2;
+            padding: 12px 20px 32px 20px;
           }
           .home-cta-title {
-            font-size: clamp(24px, 6.5vw, 32px);
+            font-size: clamp(24px, 6vw, 32px);
             margin-bottom: 6px;
           }
           .home-cta-subtitle {
-            font-size: 14.5px;
+            font-size: 15px;
             margin-bottom: 6px;
           }
           .home-cta-desc {
-            font-size: 13px;
-            margin-bottom: 16px;
+            font-size: 13.5px;
+            margin-bottom: 18px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .home-hero-content-layer {
+            padding: 20px 16px 28px 16px;
+          }
+          .home-cta-content-layer {
+            padding: 12px 16px 28px 16px;
           }
           .home-cta-handwriting {
-            position: relative;
-            top: auto;
-            bottom: auto;
-            left: auto;
-            right: auto;
-            margin: 0 0 12px 20px;
-            font-size: 16px;
-            line-height: 1.15;
-            transform: rotate(-4deg);
-            display: inline-block;
-            z-index: 3;
-            text-align: left;
-            white-space: normal;
+            margin: 14px 16px 4px 16px;
           }
         }
       `}</style>
